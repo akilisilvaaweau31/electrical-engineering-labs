@@ -1,0 +1,64 @@
+name: Engineering experiment
+description: Define a focused calculation, program, simulation, or measurement.
+title: "[Experiment]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Define one useful engineering question. Mark planned work as planned and link any evidence that already exists.
+  - type: input
+    id: project
+    attributes:
+      label: Project or proposed folder
+      description: Use an existing subject category and a descriptive project name.
+      placeholder: circuits/rc-step-response
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Engineering question
+      description: What do you want to understand or demonstrate, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: prediction
+    attributes:
+      label: Prediction and assumptions
+      description: Predict the direction, scale, or behavior before solving or running the experiment.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Intended evidence
+      description: Select what this task is expected to produce, not what has already happened.
+      multiple: true
+      options:
+        - Analytical calculation
+        - Synthetic input or fixture
+        - Software implementation and actual run results
+        - Simulation and saved outputs
+        - Physical measurements
+        - Documentation or review
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and constraints
+      description: State the source files, tools, inputs, units, and relevant limitations. Identify anything that is not yet available.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: What observable result and supporting artifact will answer the question?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Existing evidence and primary references
+      description: Link relevant project files, calculations, device documentation, or prior observations. Do not include credentials or personal records.
