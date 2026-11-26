@@ -1,0 +1,56 @@
+name: Bug or incorrect result
+description: Report a reproducible problem in code, calculations, simulation source, or documentation.
+title: "[Bug]: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Affected project or file
+      placeholder: c-programming/example/src/main.cpp
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Commit, branch, or version
+      description: Include the exact revision if known; otherwise say unknown.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the incorrect behavior or statement.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps or calculation
+      description: Give the smallest useful input, exact command or procedure, and relevant conditions/units.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and basis
+      description: Explain the expected behavior and link the equation, specification, or other evidence supporting it.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Actual result
+      description: Include the observed output, error, or discrepancy. Label calculations, simulations, and measurements accurately.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment
+      description: List compiler/simulator versions, operating system, or hardware revision only when they affect the issue. Remove private paths and credentials from logs.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting files or links
+      description: Link a small relevant artifact or screenshot with units and conditions. Avoid large raw dumps.

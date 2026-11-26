@@ -1,5 +1,14 @@
 # Electrical Engineering Labs
 
+## Start here
+
+- [Portfolio index](PORTFOLIO_INDEX.md): distinguish templates, analytical examples, and completed work.
+- [Working guide](docs/github-setup/START_HERE.md): where files belong and how to use them.
+- [Current status](STATUS.md) and [next session](NEXT_SESSION.md): resume from the actual project state.
+- [Engineering templates](templates/README.md): labs, code, SPICE, firmware, hardware, decisions, and evidence.
+
+This repository includes assistant-prepared reference material. The worked examples are analytical, and the reference SPICE netlist has not been executed as part of this setup. Completed learning and portfolio claims require their own source and evidence.
+
 This repository documents my Electrical Engineering training and portfolio work as it develops. It is intended to hold organized lab notes, circuit analysis, simulations, code, embedded experiments, digital logic work, PCB design practice, and project documentation.
 
 ## Purpose
@@ -53,4 +62,3 @@ Projects will be added as they are started. Each project should include its own 
 ## Documentation Standard
 
 Each meaningful lab, exercise, or project should include enough context for a future reader to understand what was attempted, how it was tested, and what was learned. Documentation should avoid unsupported claims and should distinguish between planned work, in-progress work, and completed results.
-
