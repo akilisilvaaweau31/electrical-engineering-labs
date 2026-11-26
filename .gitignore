@@ -61,10 +61,8 @@ venv/
 # LTspice generated files
 *.raw
 *.log
-*.net
 *.op.raw
 *.fft
-*.plt
 *.savebias
 *.loadbias
 
@@ -84,3 +82,20 @@ fabrication/
 scratch/
 tmp/
 *.tmp
+
+# Keep authored SPICE .net netlists and .plt plot settings versioned.
+# Put disposable generated exports in scratch/ or tmp/.
+
+# Credentials and private local data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+private-local/
+
+# Ignore rules do not remove previously committed data or history.
